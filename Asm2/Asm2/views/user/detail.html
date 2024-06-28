@@ -1,0 +1,99 @@
+<div class="container pb-5">
+    <h5 class="text-center text-danger m-4 ">CHI TIẾT SẢN PHẨM</h5>
+    <div class="row px-5 g-4">
+        <div class="col-lg-5 mb-30 border border-1 rounded-3">
+            <img src="{{objDetai.img}}" class="img-fluid " alt="">
+        </div>
+
+        <div class="col-lg-7 h-auto mb-30">
+            <div class="h-100 bg-light p-30">
+                <h3>{{objDetai.name}}</h3>
+                <div class="d-flex mb-3">
+                    <div class="text-warning mr-2">
+                        <small class="fas fa-star"></small>
+                        <small class="fas fa-star"></small>
+                        <small class="fas fa-star"></small>
+                        <small class="fas fa-star-half-alt"></small>
+                        <small class="far fa-star"></small>
+                    </div>
+                    <small class="pt-1">(99 Đánh giá)</small>
+                </div>
+                <p class="card-text text-danger"><b>{{objDetai.price}}đ </b><del> <i class="text-dark">990,000đ</i></del></p>
+                <p class="mb-4">- Sở hữu thiết kế thời trang, năng động, cùng chất liệu bền bỉ hỗ trợ vận động tốt và bảo vệ đôi chân cho người mang. 
+
+                    <br>- Đế cao su mềm, êm ái giúp bạn cảm thấy dễ chịu khi di chuyển trong thời gian dài. </p>
+                <div class="d-flex mb-3">
+                    <strong class="text-dark mr-3">Kích thước:&nbsp&nbsp</strong>
+                    <div class="d-flex">
+                        <div class="">
+                            <input type="radio" class="custom-control-input" id="size-38" name="size">
+                            <label class="custom-control-label" for="size-38">38&nbsp&nbsp&nbsp&nbsp</label>
+                        </div>
+                        <div class="">
+                            <input type="radio" class="custom-control-input" id="size-39" name="size">
+                            <label class="custom-control-label" for="size-39">39&nbsp&nbsp&nbsp&nbsp</label>
+                        </div>
+                        <div class="">
+                            <input type="radio" class="custom-control-input" id="size-40" name="size">
+                            <label class="custom-control-label" for="size-40">40&nbsp&nbsp&nbsp&nbsp</label>
+                        </div>
+                        <div class="">
+                            <input type="radio" class="custom-control-input" id="size-41" name="size">
+                            <label class="custom-control-label" for="size-41">41&nbsp&nbsp&nbsp&nbsp</label>
+                        </div>
+                        <div class="">
+                            <input type="radio" class="custom-control-input" id="size-42" name="size">
+                            <label class="custom-control-label" for="size-42">42&nbsp&nbsp&nbsp&nbsp</label>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="d-flex mb-4">
+                    <strong class="text-dark mr-3">Màu sắc:&nbsp&nbsp</strong>
+                    <form>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="color-1" name="color">
+                            <label class="custom-control-label" for="color-1">Đen&nbsp&nbsp&nbsp</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="color-2" name="color">
+                            <label class="custom-control-label" for="color-2">Trắng&nbsp&nbsp&nbsp</label>
+                        </div>
+
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="color-5" name="color">
+                            <label class="custom-control-label" for="color-5">Xanh&nbsp&nbsp&nbsp</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="d-flex align-items-center mb-4 pt-2">
+                    <strong>Số lượng:</strong> 1
+                    </div>
+                <!-- Thêm sản phẩm vào giỏ hàng -->
+                <div class="pr-2">
+                    <a href="#!cart" class="btn btn-outline-dark text-uppercase" ng-click="addToCart(objDetail)">Mua ngay</a>
+                    <a href="#!cart" class="btn btn-outline-dark text-uppercase"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ</a>
+                </div>
+
+                </div>
+                <div class="d-flex pt-2">
+                    <strong class="text-dark mr-2">Chia sẻ:</strong>
+                    <div class="d-inline-flex">
+                        <a class="text-dark px-2" href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-dark px-2" href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="text-dark px-2" href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="text-dark px-2" href="">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

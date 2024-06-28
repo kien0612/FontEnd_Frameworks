@@ -1,0 +1,220 @@
+<div >
+    <div class="row mt-5">
+        <div class="col-6">
+            <img src="{{productDetail.image}}" height="col-6" width="600px">
+        </div>
+        <div class="col-6 pe-5">
+            <div class="pro-title text-center mb-3">
+                <span class="fs-3"><em>{{productDetail.name}}</em></span>
+            </div>
+            <div class="pro-price mb-3 ms-4">
+                <span class="fs-5"><strong>{{productDetail.price}}₫</strong></span>
+            </div>
+            <div class="num ">
+                <div id="size-selection" class="mb-3">
+                    <label for="size">Chọn kích thước:</label>
+                    <select id="size">
+                        <option value="36">Size 36</option>
+                        <option value="37">Size 37</option>
+                        <option value="38">Size 38</option>
+                        <option value="39">Size 39</option>
+                        <option value="40">Size 40</option>
+                    </select>
+                </div>
+                <div id="quantity-control" class="mb-3">
+                    <button id="decrease-btn" class="border border-none">-</button>
+                    <span id="quantity" >0</span>
+                    <button id="increase-btn" class="border border-none">+</button>
+                </div>
+            </div>
+            <div class="button row mb-3 d-flex justify-content-around">
+                <button class="btn btn-dark col-5 me-4">Thêm vào giỏ hàng</button>
+                <button class="btn btn-danger col-5 ">Mua ngay</button>
+            </div>
+            <div class="row">
+                <button class="btn btn-info  ">Nhận mã giảm giá</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Mô tả</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">BÌnh luận</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                <p class="w-50">{{productDetail.des}}</p>
+    
+                
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div class="card">
+                    <div class="card-header">
+                      Bình luận
+                    </div>
+                    <div class="card-body">
+                      <ul class="list-group">
+                          <!-- Bình luận 1 -->
+                          <li class="list-group-item">
+                            <strong>Người dùng 1:</strong> Bình luận 1
+                          </li>
+                          <!-- Bình luận 2 -->
+                          <li class="list-group-item">
+                            <strong>Người dùng 2:</strong> Bình luận 2
+                          </li>
+                          <!-- Bình luận 3 -->
+                          <li class="list-group-item">
+                            <strong>Người dùng 3:</strong> Bình luận 3
+                          </li>
+                          <!-- Và các bình luận khác -->
+                        </ul>
+                      <!-- Form bình luận -->
+                      <form id="comment-form">
+                        <div class="form-group">
+                          <label for="comment">Nội dung bình luận:</label>
+                          <textarea class="form-control" id="comment" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Gửi</button>
+                      </form>
+                    </div>
+                  </div>
+            </div>
+          </div>
+    </div>
+    <div class="row mt-5 mb-3">
+        <h2 class="text-center mb-5">Sản phẩm liên quan</h2>
+        <div class="row">
+            <div class="prod col-3 p-2">
+                <div class="border border-1 rounded text-center">
+                    <div class="image">
+                        <a href="detail.html"><img
+                                src="https://product.hstatic.net/1000375638/product/804113_02_18fd176e1b014f4b91167909d84cfb5b_grande.jpg"
+                                class="w-75" alt=""></a>
+                    </div>
+                    <div class="title">
+                        <a href="detail.html" class="text-black text-decoration-none">
+                            <p class="fc">Nike Air Max 1 Anniversary</p>
+                        </a>
+                    </div>
+                    <div class="price">
+                        <a href="detail.html" class="text-black text-decoration-none">
+                            <p class="fc"><strong>4,200,000₫</strong></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="prod col-3 p-2">
+                <div class="border border-1 rounded text-center">
+                    <div class="image">
+                        <a href="detail.html"><img
+                                src="https://product.hstatic.net/1000375638/product/804379_02_6229ef78879045719f53ea5d995e9baa_grande.jpg"
+                                class="w-75" alt=""></a>
+                    </div>
+                    <div class="title">
+                        <a href="detail.html" class="text-black text-decoration-none">
+                            <p class="fc">Nike Air Max 1 Anniversary</p>
+                        </a>
+                    </div>
+                    <div class="price">
+                        <a href="detail.html" class="text-black text-decoration-none">
+                            <p class="fc"><strong>4,200,000₫</strong></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="prod col-3 p-2">
+                <div class="border border-1 rounded text-center">
+                    <div class="image">
+                        <a href="detail.html"><img
+                                src="https://product.hstatic.net/1000375638/product/141873_02_1aac934c7b5945a2a48ea2fc7e2323c4_grande.jpg"
+                                class="w-75" alt=""></a>
+                    </div>
+                    <div class="title">
+                        <a href="detail.html" class="text-black text-decoration-none">
+                            <p class="fc">Nike Air Max 1 Anniversary</p>
+                        </a>
+                    </div>
+                    <div class="price">
+                        <a href="detail.html" class="text-black text-decoration-none">
+                            <p class="fc"><strong>4,200,000₫</strong></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="prod col-3 p-2">
+                <div class="border border-1 rounded text-center">
+                    <div class="image">
+                        <a href="detail.html"><img
+                                src="https://product.hstatic.net/1000375638/product/139922_02_66b331600fc24d72a42ed88d5708ff72_grande.jpg"
+                                class="w-75" alt=""></a>
+                    </div>
+                    <div class="title">
+                        <a href="detail.html" class="text-black text-decoration-none">
+                            <p class="fc">Nike Air Max 1 Anniversary</p>
+                        </a>
+                    </div>
+                    <div class="price">
+                        <a href="detail.html" class="text-black text-decoration-none">
+                            <p class="fc"><strong>4,200,000₫</strong></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+          
+        </div>
+      </div>
+    <div class="row mt-5 mb-3">
+        <h2 class="text-center mb-5">Khách hàng và Runner Inn</h2>
+        <div class="row">
+          
+          <div class="col-2 p-1">
+            <img src="https://theme.hstatic.net/1000375638/1000671808/14/gallery_item_1.jpg?v=101" class="w-100" alt="">
+          </div>
+          <div class="col-2 p-1">
+            <img src="https://theme.hstatic.net/1000375638/1000671808/14/gallery_item_2.jpg?v=101" class="w-100" alt="">
+          </div>
+          <div class="col-2 p-1">
+            <img src="https://theme.hstatic.net/1000375638/1000671808/14/gallery_item_3.jpg?v=101" class="w-100" alt="">
+          </div>
+          <div class="col-2 p-1">
+            <img src="https://theme.hstatic.net/1000375638/1000671808/14/gallery_item_4.jpg?v=101" class="w-100" alt="">
+          </div>
+          <div class="col-2 p-1">
+            <img src="https://theme.hstatic.net/1000375638/1000671808/14/gallery_item_5.jpg?v=101" class="w-100" alt="">
+          </div>
+          <div class="col-2 p-1">
+            <img src="https://theme.hstatic.net/1000375638/1000671808/14/gallery_item_6.jpg?v=101" class="w-100" alt="">
+          </div>
+          
+        </div>
+      </div>
+</div>
+    <script>
+
+        // Lấy ra các phần tử cần sử dụng
+const decreaseBtn = document.getElementById('decrease-btn');
+const increaseBtn = document.getElementById('increase-btn');
+const quantitySpan = document.getElementById('quantity');
+
+// Thiết lập sự kiện cho nút giảm
+decreaseBtn.addEventListener('click', () => {
+    let quantity = parseInt(quantitySpan.textContent);
+    if (quantity > 0) {
+        quantity--;
+        quantitySpan.textContent = quantity;
+    }
+});
+
+// Thiết lập sự kiện cho nút tăng
+increaseBtn.addEventListener('click', () => {
+    let quantity = parseInt(quantitySpan.textContent);
+    quantity++;
+    quantitySpan.textContent = quantity;
+});
+
+    </script>

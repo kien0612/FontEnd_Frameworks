@@ -1,0 +1,30 @@
+<h1>Danh Sách Sản Phẩm</h1>
+<table class="table mb-5">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Category</th>
+            <th scope="col">Name</th>
+            <th scope="col">Image</th>
+            <th scope="col">Price</th>
+            <th scope="col">Description</th>
+            <th scope="col">
+                <a href="#!/add"><button type="button" class="btn btn-success">Thêm</button></a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="product in products">
+            <th scope="row">{{product.id}}</th>
+            <th scope="row">{{product.category}}</th>
+            <td>{{product.name}}</td>
+            <td><img ng-src="{{product.image}}" alt="" width="50%"></td>
+            <td>${{product.price}}</td>
+            <td >{{product.description}}</td>
+            <td width="15%"> <button type="button" class="btn btn-warning" ng-click="onDetail(product.id)">Chi tiết</button>
+                <button type="button" class="btn btn-danger" ng-click="onDelete(product.id)">Xóa</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+

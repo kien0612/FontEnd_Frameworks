@@ -1,0 +1,27 @@
+<h1>Thêm giảng viên</h1>
+<form name="form">
+    <div>
+        <label for="" class="form-label">ID</label>
+        <input type="text" class="form-control" name="id" ng-model="input.id" required>
+        <p class="text-danger" ng-if="form.id.$dirty && form.id.$error.required">ID không được bỏ trống</p>
+    </div>
+    <div>
+        <label for="" class="form-label">Tên</label>
+        <input type="text" class="form-control" name="ten" ng-model="input.ten" required> 
+        <p class="text-danger" ng-if="form.ten.$dirty && form.ten.$error.required">Tên không được bỏ trống</p>
+    </div>
+    <div>
+        <label for="" class="form-label">Giới tính</label>
+        <select name="gioitinh" class="form-control" ng-model="input.gioitinh" id="" required>
+            <option value="Nam">Nam</option>
+            <option value="Nữ">Nữ</option>
+        </select>
+        <p class="text-danger" ng-if="form.gioitinh.$dirty && form.gioitinh.$error.required">Giới tinhs không được bỏ trống</p>
+    </div>
+    <div>
+        <label for="" class="form-label">Email</label>
+        <input type="email" class="form-control" name="email" ng-model="input.email" required>
+        <p class="text-danger" ng-if="form.email.$dirty && form.email.$error.required">Email không được bỏ trống</p>
+    </div>
+    <button class="btn btn-success" ng-click="onSubmit()">Thêm</button>
+</form>

@@ -1,0 +1,96 @@
+<div class="banner row p-0">
+    <div id="carouselExampleRide" class="carousel slide col-12 w-100 p-0" data-bs-ride="true">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://theme.hstatic.net/1000375638/1000671808/14/slideshow_1.jpg?v=101" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://theme.hstatic.net/1000375638/1000671808/14/slideshow_2.jpg?v=101" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://theme.hstatic.net/1000375638/1000671808/14/slideshow_3.jpg?v=101" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!-- <img src="https://theme.hstatic.net/1000375638/1000671808/14/slideshow_1.jpg?v=101"
+        class=" col-12 w-100 p-0" alt=""> -->
+</div>
+<div class="row">
+    <div class="m-3">
+        <h4 class="text-center "><em>Sản phẩm mới</em></h4>
+    </div>
+
+    <article class="mb-3" >
+        <div class="row">
+            <div class="prod col-3 p-2" ng-repeat="pr in listPro"> 
+                <div class="border border-1 rounded text-center">
+                    <!-- <button type="button" ng-click="check(pr)">check</button> -->
+                    <div class="image">
+                        <a ng-href="#!/detail/{{ pr.id }}"
+                        ><img
+                                ng-src="{{pr.image}}"
+                                class="w-75" alt=""></a>
+                    </div>
+                    <div class="title">
+                        <a ng-href="#!/detail/{{ pr.id }}" class="text-black text-decoration-none">
+                            <p class="fc">{{pr.name}}</p>
+                        </a>
+                    </div>
+                    <div class="price">
+                        <a ng-href="#!/detail/{{ pr.id }}" class="text-black text-decoration-none">
+                            <p class="fc"><strong>{{pr.price}}₫</strong></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </article>
+</div>
+<div class="row mt-5 mb-3">
+      
+      <div class="col-4 p-1">
+        <img src="https://theme.hstatic.net/1000375638/1000671808/14/block_home_category1_grande.jpg?v=101" class="w-100" alt="">
+      </div>
+        <div class="col-4 p-1">
+            <img src="https://theme.hstatic.net/1000375638/1000671808/14/block_home_category2_grande.jpg?v=101" class="w-100" alt="">
+        </div>
+      <div class="col-4 p-1">
+        <img src="https://theme.hstatic.net/1000375638/1000671808/14/block_home_category3_grande.jpg?v=101" class="w-100" alt="">
+      </div>
+      
+  </div>
+<div class="row mt-5 mb-3">
+    <h2 class="text-center mb-5">Khách hàng và Runner Inn</h2>
+    <div class="row"> 
+      
+      <div class="col-2 p-1">
+        <img src="https://theme.hstatic.net/1000375638/1000671808/14/gallery_item_1.jpg?v=101" class="w-100" alt="">
+      </div>
+      <div class="col-2 p-1">
+        <img src="https://theme.hstatic.net/1000375638/1000671808/14/gallery_item_2.jpg?v=101" class="w-100" alt="">
+      </div>
+      <div class="col-2 p-1">
+        <img src="https://theme.hstatic.net/1000375638/1000671808/14/gallery_item_3.jpg?v=101" class="w-100" alt="">
+      </div>
+      <div class="col-2 p-1">
+        <img src="https://theme.hstatic.net/1000375638/1000671808/14/gallery_item_4.jpg?v=101" class="w-100" alt="">
+      </div>
+      <div class="col-2 p-1">
+        <img src="https://theme.hstatic.net/1000375638/1000671808/14/gallery_item_5.jpg?v=101" class="w-100" alt="">
+      </div>
+      <div class="col-2 p-1">
+        <img src="https://theme.hstatic.net/1000375638/1000671808/14/gallery_item_6.jpg?v=101" class="w-100" alt="">
+      </div>
+      
+    </div>
+  </div>

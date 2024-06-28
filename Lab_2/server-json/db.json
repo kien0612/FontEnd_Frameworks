@@ -1,0 +1,20 @@
+{
+  "products": [
+    {
+      "id": "2",
+      "name": "sản phẩm 22",
+      "price": 2000002,
+      "des": "hàng đẹp22"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "kienvt1"
+    },
+    {
+      "id": "2",
+      "name": "kienvt2"
+    }
+  ]
+}

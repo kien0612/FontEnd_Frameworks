@@ -1,0 +1,49 @@
+<div class="row gx-0">
+
+  <aside class=" col-2 bg-dark-subtle ">
+    <ul class="nav flex-column ">
+      <li class="nav-item border border-1 rounded-2 bg-info-subtle text-center">
+        <a class="nav-link active " aria-current="page" href="#">Sản Phẩm</a>
+      </li>
+      
+    </ul>
+
+  </aside>
+  <article class="col-10 bg-body-tertiary p-5 d-flex justify-content-center" >
+    <div class="center bg-white rounded-5 p-3 w-50">
+      <h1 style="text-align: center;">Update Product</h1>
+      <form action="" name="form">
+        
+        <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" name="name" ng-model="productDetail.name" required minlength="6">
+            <span ng-if="form.name.$dirty && form.name.$error.required" style="color: red;">*Tên không được bỏ trống</span>
+            <span ng-if="form.name.$dirty && form.name.$error.minlength" style="color: red;">*Tên không được nhỏ hơn 6 kí tự</span>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Price</label>
+          <input type="number" class="form-control" name="price" ng-model="productDetail.price" required min="100">
+          <span ng-if="form.price.$dirty && form.price.$error.required" style="color: red;">*Giá không được bỏ trống</span>
+          <span ng-if="form.price.$dirty && form.price.$error.min" style="color: red;">*Giá không được nhỏ hơn 100</span>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Image</label>
+          <img ng-src="{{productDetail.image}}" alt="" height="100px">
+          <input type="text" class="form-control" placeholder="Thay ảnh mới" ng-model="productDetail.image" name="image" required>
+          <span ng-if="form.image.$dirty && form.image.$error.required" style="color: red;">*Ảnh không được bỏ trống</span>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Description</label>
+          <textarea class="form-control"  id="floatingTextarea" name="des" ng-model="productDetail.des" required></textarea>
+          <span ng-if="form.des.$dirty && form.des.$error.required" style="color: red;">*Mô tả không được bỏ trống</span>
+
+        </div>
+        
+        <div class="d-flex justify-content-between">
+            <button type="button" class="btn btn-success" ng-click="updateSp()">Sửa</button>
+            <a href="#!/"><button type="button" class="btn btn-primary">Danh sách</button></a>
+        </div>
+      </form>
+    </div>
+  </article>
+</div>

@@ -1,0 +1,30 @@
+<h1>Update sản phẩm mới</h1>
+<form name="form">
+    <div>
+        <label for="" class="form-label">Name</label>
+        <input type="text" class="form-control" name="name" ng-model="product.name" required>
+        <p class="text-danger" ng-if="form.name.$dirty && form.name.$error.required">Name không được để trống</p>
+    </div>
+    <div>
+        <label for="" class="form-label">Price</label>
+        <input type="number" class="form-control" name="price" ng-model="product.price" required>
+        <p class="text-danger" ng-if="form.price.$dirty && form.price.$error.required">price không được để trống</p>
+    </div>
+    <div>
+        <label for="" class="form-label">Category</label>
+        <select name="category" class="form-control " id="" ng-model="product.category" required>
+            <option value="hãng 1">hãng 1</option>
+            <option value="hãng 2">hãng 2</option>
+            <option value="hãng 3">hãng 3</option>
+        </select>
+        <p class="text-danger" ng-if="form.category.$dirty && form.category.$error.required">Category không được để trống</p>
+    </div>
+    <div >
+        <label for="" class="form-label">Des</label>
+        <input type="text" class="form-control" name="des" ng-model="product.des" required>
+        <p class="text-danger" ng-if="form.des.$dirty && form.des.$error.required">Des không được để trống</p>
+    </div>
+    <center>
+        <button type="button" class="btn btn-success mt-5" ng-click="onSub()"  >Update</button>
+    </center>
+</form>

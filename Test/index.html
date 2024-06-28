@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="shoppingApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div ng-controller="ShoppingController as shoppingCtrl">
+        <h1>Shopping App</h1>
+        <div ng-repeat="product in shoppingCtrl.products">
+            <p>{{product.name}} - {{product.price}}$</p> <button ng-click="shoppingCtrl.addToCart(product)">Add to
+                    Cart</button>
+        </div>
+        <h2>Cart</h2>
+        <div ng-repeat="item in shoppingCtrl.cart">
+            <p>{{item.name}} - {{item.price}}$</p>
+        </div>
+        <p>Total: {{shoppingCtrl.getTotal()}}$</p>
+    </div>
+</body>
+
+</html>

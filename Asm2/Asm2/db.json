@@ -1,0 +1,38 @@
+{
+  "products": [
+    {
+      "name": "Giày Casual WALKER GZ Anta",
+      "img": "img/giay_3.webp",
+      "price": 200000,
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "name": "Giày thời trang nam Casual WALKER GZ Anta 812328816-2",
+      "category": "Giày",
+      "price": 300000,
+      "img": "img/giay_1.webp"
+    },
+    {
+      "name": "giay",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKwskWcodnZJRaWbS7JuH5HslykraO7fsAuWgA7kN_oA&s",
+      "price": "120000",
+      "category": "Android",
+      "id": "ada3"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Android",
+      "id": "1"
+    },
+    {
+      "name": "SamSung",
+      "id": "c607"
+    },
+    {
+      "id": "0f1d",
+      "name": "Quan the thao"
+    }
+  ]
+}

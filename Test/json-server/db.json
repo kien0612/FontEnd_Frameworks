@@ -1,0 +1,22 @@
+{
+    "teachers":[
+        {
+            "id" : "1",
+            "ten" : "kien123",
+            "gioiTinh" : 1,
+            "email" : "vutrungkien123@gamil.com"
+        },
+        {
+            "id" : "2",
+            "ten" : "kien1234",
+            "gioiTinh" : 2,
+            "email" : "vutrungkien123@gamil.com"
+        },
+        {
+            "id" : "3",
+            "ten" : "kien12345",
+            "gioiTinh" : 1,
+            "email" : "vutrungkien123@gamil.com"
+        }
+    ]
+}  

@@ -1,0 +1,30 @@
+<h1>Thêm mới Phone</h1>
+<form name="form">
+    <div>
+        <label class="form-label ">Id</label>
+        <input type="text" name="id" class="form-control" ng-model="inputValue.id" required>
+        <p class="text-danger" ng-if="form.id.$dirty && form.id.$error.required">Id không được bỏ trống</p>
+    </div>
+    <div>
+        <label class="form-label ">ten</label>
+        <input type="text" name="ten" class="form-control" ng-model="inputValue.ten" required>
+        <p class="text-danger" ng-if="form.ten.$dirty && form.ten.$error.required">ten không được bỏ trống</p>
+    </div>
+    <div>
+        <label class="form-label ">hang</label>
+        <select name="hang" class="form-control" ng-model="inputValue.hang" required>
+            <option value="SamSung">SamSung</option>
+            <option value="Oppo">Oppo</option>
+            <option value="Apple">Apple</option>
+        </select>
+        <p class="text-danger" ng-if="form.hang.$dirty && form.hang.$error.required">hang không được bỏ trống</p>
+    </div>
+    <div>
+        <label class="form-label ">gia</label>
+        <input type="text" name="gia" class="form-control" ng-model="inputValue.gia" required>
+        <p class="text-danger" ng-if="form.gia.$dirty && form.gia.$error.required">gia không được bỏ trống</p>
+    </div>
+    <center>
+        <button type="button" class="btn btn-success mt-2" ng-click="onAdd()">Thêm mới</button>
+    </center>
+</form>

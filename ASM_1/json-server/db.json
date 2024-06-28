@@ -1,0 +1,109 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "category": "Headphone",
+      "name": "Red Wireless Headphone",
+      "image": "images/product/electronic/product2.ea1932957badfdefe7e4a1e7d50f4ea9.jpg",
+      "price": 11000,
+      "discount": 12000,
+      "description": "Enjoy your favorite tunes with the Red Wireless Headphone. These headphones offer a comfortable fit, high-quality sound, and the convenience of wireless connectivity. Whether you're commuting, working out, or relaxing at home, these headphones deliver an immersive listening experience."
+    },
+    {
+      "id": "2",
+      "category": "Headphone",
+      "name": "Yellow Wireless Headphone",
+      "image": "images/product/electronic/product3.207dd89cb8b11937ace9524c6c84fb78.jpg",
+      "price": 12000,
+      "discount": 13000,
+      "description": "Experience music on the go with the Yellow Wireless Headphone. These stylish headphones provide crisp, clear sound and a lightweight design for maximum comfort. With Bluetooth connectivity, you can enjoy your favorite tracks without the hassle of wires."
+    },
+    {
+      "id": "3",
+      "category": "Camera",
+      "name": "Canon DSLR Camera 4k",
+      "image": "images/product/electronic/product6.230bad1839e2b89163f8fd71bef6a4c8.jpg",
+      "price": 13000,
+      "discount": 14000,
+      "description": "Capture stunning photos and videos with the Canon DSLR Camera 4k. Equipped with a 24.2MP APS-C CMOS sensor, this camera delivers high-resolution images with vibrant colors and sharp details. Whether you're a beginner or an experienced photographer, this camera is perfect for capturing your memories in stunning clarity."
+    },
+    {
+      "id": "4",
+      "category": "Camera",
+      "name": "Nikon DSLR Camera 4k",
+      "image": "images/product/electronic/product7.118dd93d7ea34fc4c98b954592b34adc.jpg",
+      "price": 15000,
+      "discount": 16000,
+      "description": "Take your photography to the next level with the Nikon DSLR Camera 4k. Featuring a sleek design and advanced features, this camera allows you to capture breathtaking images and videos with ease. Whether you're shooting landscapes, portraits, or action scenes, this camera delivers outstanding performance in any situation."
+    },
+    {
+      "id": "5",
+      "category": "Smartphone",
+      "name": "Smartphone RAM 4GB New",
+      "image": "images/product/electronic/product8.bf249372badc3640bfca061e4b6c26de.jpg",
+      "price": 16000,
+      "discount": 17000,
+      "description": "Stay connected and productive with the Smartphone RAM 4GB New. Featuring a powerful processor and ample RAM, this smartphone offers smooth performance for multitasking, gaming, and streaming. With a vibrant display and long-lasting battery, it's perfect for staying entertained on the go."
+    },
+    {
+      "id": "6",
+      "category": "Smartphone",
+      "name": "Smartphone RAM 8GB New",
+      "image": "images/product/electronic/product9.fc469c4c3ff0e8a78254d6e29c27a5d6.jpg",
+      "price": 17000,
+      "discount": 18000,
+      "description": "Experience the ultimate in mobile computing with the Smartphone RAM 8GB New. With lightning-fast performance and ample storage, this smartphone is perfect for multitasking, gaming, and productivity. Whether you're streaming movies, editing photos, or staying connected with friends and family, this smartphone has you covered."
+    },
+    {
+      "id": "8336",
+      "name": "san pham 111",
+      "category": "ddddas",
+      "price": 1211,
+      "discount": 1232,
+      "description": "axzszx"
+    }
+  ],
+  "categorys": [
+    {
+      "id": "1",
+      "name": "headphone"
+    },
+    {
+      "id": "2",
+      "name": "dslr"
+    },
+    {
+      "id": "3",
+      "name": "smartphone"
+    },
+    {
+      "id": "4"
+    }
+  ],
+  "uesr": [
+    {
+      "id": "1",
+      "name": "Vũ Trung Kiên",
+      "email": "kien0612@gmail.com",
+      "pass": "kien1234"
+    },
+    {
+      "id": "45f0",
+      "name": "kiên hi21",
+      "email": "kien612@gmail.com",
+      "pass": "kien123456"
+    },
+    {
+      "id": "6376",
+      "name": "kien1233",
+      "email": "kien12@gmail.com",
+      "pass": "kien1234"
+    },
+    {
+      "id": "deb6",
+      "name": "kiên hi123",
+      "pass": "kien123456",
+      "email": "kien612@gmail.com"
+    }
+  ]
+}

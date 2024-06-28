@@ -1,0 +1,23 @@
+<h1>Chỉnh sửa giảng viên</h1>
+<form>
+    <div>
+        <label for="" class="form-label">ID</label>
+        <input type="text" class="form-control" ng-model="input.id">
+    </div>
+    <div>
+        <label for="" class="form-label">Tên</label>
+        <input type="text" class="form-control" ng-model="input.ten">
+    </div>
+    <div>
+        <label for="" class="form-label">Giới tính</label>
+        <select name="" class="form-control" ng-model="input.gioitinh" id="">
+            <option value="Nam">Nam</option>
+            <option value="Nữ">Nữ</option>
+        </select>
+    </div>
+    <div>
+        <label for="" class="form-label">Email</label>
+        <input type="email" class="form-control" ng-model="input.email">
+    </div>
+    <button class="btn btn-success" ng-click="onSubmit()">Sửa</button>
+</form>

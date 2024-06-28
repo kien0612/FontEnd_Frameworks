@@ -1,0 +1,110 @@
+.switcher {
+    display: block;
+    height: 360px;
+    width: 280px;
+    background: #fff;
+    padding: 30px;
+    position: fixed;
+    top: 250px;
+    right: -280px;
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, .07);
+    z-index: 99;
+    transition: all .3s linear
+}
+
+.switcher.js-switcher-open {
+    right: -1px
+}
+
+.switcher__toggle {
+    box-shadow: -2px 0 4px 0 rgba(0, 0, 0, .07);
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    color: #333;
+    background: #fff;
+    position: absolute;
+    left: -40px;
+    text-align: center;
+    cursor: pointer
+}
+
+.switcher__h3 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #333
+}
+
+.switcher__text {
+    display: block;
+    font-size: 12px;
+    color: #7f7f7f
+}
+
+.switcher__color {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.switcher__mode {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 40px;
+    cursor: pointer;
+    border: 2px solid #e5e5e5;
+    font-size: 13px;
+    text-align: center;
+    padding: 8px 18px;
+    font-weight: 700;
+    color: #333
+}
+
+.switcher__mode.js-mode-select,
+.switcher__mode:hover {
+    background-color: rgba(0, 148, 68, .12);
+    color: #009444;
+    border-color: #009444
+}
+
+.color {
+    position: relative;
+    border-radius: 50%;
+    width: 30px;
+    display: inline-block;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    transition: -webkit-transform .5s ease-in-out;
+    transition: transform .5s ease-in-out;
+    transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out
+}
+
+.color:last-child {
+    margin-right: 0
+}
+
+.color:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2)
+}
+
+.color.js-color-select:after {
+    color: #fff;
+    content: "\F00C";
+    font-family: Font Awesome\ 5 Free;
+    font-size: 8px;
+    font-weight: 900;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 2
+}

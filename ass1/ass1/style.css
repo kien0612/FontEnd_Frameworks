@@ -1,0 +1,12 @@
+.fc{
+    font-family: "Lucida Console", Courier, monospace;
+    font-size: small;
+}
+.bglogin{
+    background-image: url('https://salt.tikicdn.com/ts/tmp/ed/16/bd/c0690f1303dff3ea4e2804aa10baf7a4.jpg');
+    background-repeat: no-repeat;
+}
+.bglogin>h1{
+    color:whitesmoke;
+    background: none;
+}

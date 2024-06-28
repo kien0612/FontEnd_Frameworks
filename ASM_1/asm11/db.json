@@ -1,0 +1,20 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "category": "Laptop",
+      "name": "Dell XPS 15",
+      "image": "https://mega.com.vn/media/news/1009_hinh-nen-hoang-hon15.jpg",
+      "price": 1800,
+      "description": "The Dell XPS 15 is a powerhouse laptop with a stunning InfinityEdge display and powerful performance. Whether you're a professional or a creative enthusiast, this laptop offers the perfect blend of style and functionality."
+    },
+    {
+      "id": "2",
+      "category": "Smartphone",
+      "name": "Samsung Galaxy S21 Ultra",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.NmYd7NZYQyaayZ0Vokl2EgHaJ4&pid=Api&P=0&h=180",
+      "price": 1200,
+      "description": "Experience the ultimate in smartphone technology with the Samsung Galaxy S21 Ultra. Featuring a pro-grade camera, stunning display, and powerful performance, this smartphone is designed to meet the demands of modern life."
+    }
+  ]
+}

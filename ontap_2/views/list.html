@@ -1,0 +1,30 @@
+<h1>Danh sách sản phẩm</h1>
+<div class="d-flex  justify-content-end ">
+    <a href="#!product/add"><button type="button" class="btn btn-success">Thêm Mới</button></a>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Tên</th>
+            <th>Hình Ảnh</th>
+            <th>Hãng</th>
+            <th>Giá</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="product in products">
+            <td>{{product.id}}</td>
+            <td>{{product.ten}}</td>
+            <td><img src="{{product.hinhAnh}}" alt=""></td>
+            <td>{{product.hang}}</td>
+            <td>{{product.gia}}</td>
+            <td>
+                <button type="button" class="btn btn-primary" ng-click="onDetail(product.id)">Chi tiết</button>
+                <button type="button" class="btn btn-warning" ng-click="onEdit(product.id)">Sửa</button>
+                <button type="button" class="btn btn-danger" ng-click="onDelete(product.id)">Xóa</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

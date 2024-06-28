@@ -1,0 +1,10 @@
+{
+  "phones": [
+    {
+      "id": "1",
+      "ten": "sản phẩm demo11",
+      "hang": "SamSung",
+      "gia": "12345"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="json-server/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="json-server/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="angular-1.8.2/angular.min.js"></script>
+    <script src="angular-1.8.2/angular-route.min.js"></script>
+    <script src="controllers/addController.js"></script>
+    <script src="controllers/detailController.js"></script>
+    <script src="controllers/listController.js"></script>
+    <script src="controllers/updateController.js"></script>
+</head>
+<body ng-app="ph31409">
+    <div class="container" ng-view></div>
+</body>
+<script>
+    angular.module('ph31409',['ngRoute']).config(function($routeProvider){
+        $routeProvider.when('/list-phone',{
+            templateUrl : 'views/list.html',
+            controller : listController
+        })
+        .when('/phone/add',{
+            templateUrl : 'views/add.html',
+            controller : addController
+        })
+        .when('/detail/phone/:id',{
+            templateUrl : 'views/detail.html',
+            controller : detailController
+        })
+        .when('/update/phone/:id',{
+            templateUrl : 'views/update.html',
+            controller : updateController
+        })
+    })
+</script>
+</html>

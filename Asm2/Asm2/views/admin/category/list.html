@@ -1,0 +1,21 @@
+<h2>Danh sách danh mục</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="cate in list_category">
+            <td>{{cate.id}}</td>
+            <td>{{cate.name}}</td>
+            <td>
+                <a href="#!category/edit_category/{{cate.id}}" class="btn btn-primary">Edit</a>
+                <button class="btn btn-danger" ng-click="delete_category(cate.id)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<a href="#!category/add_category" class="btn btn-primary">Add category</a>

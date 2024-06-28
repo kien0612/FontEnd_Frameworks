@@ -1,0 +1,29 @@
+<h1>Danh sách User</h1>
+<div class="d-flex  justify-content-end">
+    <a href="#!user/add"><button type="button" class="btn btn-success">Thêm Mới</button></a>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Class</th>
+            <th>Stady</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="user in users">
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.class}}</td>
+            <td>{{user.stady}}</td>
+            <td>
+                <button type="button" class="btn btn-warning" ng-click="onDetail(user.id)">Chi Tiết</button>
+                <button type="button" class="btn btn-danger" ng-click="onEdit(user.id)">Sửa</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,29 @@
+<h2>Danh sách sản phẩm</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Image</th>
+            <th>Price</th>
+            <th>Categry</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="pro in list_product">
+            <td>{{pro.id}}</td>
+            <td>{{pro.name}}</td>
+            <td>
+                <img src="{{pro.img}}" alt="" height="100px" width="100px" srcset="">
+            </td>
+            <td>{{pro.price}}</td>
+            <td>{{pro.category}}</td>
+            <td>
+                <a href="#!product/edit/{{pro.id}}" class="btn btn-primary">Edit</a>
+                <button class="btn btn-danger" ng-click="delete_product(pro.id)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<a href="#!product/add_product" class="btn btn-primary">Add product</a>

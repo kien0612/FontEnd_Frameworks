@@ -1,0 +1,25 @@
+{
+  "shoes": [
+    {
+      "id": "12",
+      "ten": "sản phẩm",
+      "hang": "Sandal",
+      "size": "111",
+      "gia": 1234
+    },
+    {
+      "id": "1",
+      "ten": "sản phẩm demo",
+      "hang": "Nike",
+      "size": "111",
+      "gia": 12345
+    },
+    {
+      "id": "123",
+      "ten": "sản phẩm demo",
+      "hang": "Nike",
+      "size": "22",
+      "gia": 111
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "product": [
+    {
+      "id": "1",
+      "name": "Nike Air Max 1 Anniversary",
+      "image": "https://product.hstatic.net/1000375638/product/801821_02_f8c35a570392475d96c39568ad9873e9_grande.jpg",
+      "price": "4200000",
+      "des": "Hiện đại và thời trang khi diện item mới của Nike. Màu sắc lạ mắt, chất liệu thoáng mát, nhẹ nhàng, phù hợp với những chàng trai yêu phong cách sports.Chất liệu cao cấp EVA, PU, Cushlon, Phylon.Bền, chống bám bẩn, dễ dàng lau chùi. Mũi giày đầy đặn, form dáng chuẩn.Bảo vệ đầu ngón chân khi hoạt động. Có lớp lót đệm bên trong.Êm, di chuyển nhiều không bị đau chân. Cổ giày thiết kế đơn giản, vừa vặn.Di chuyển dễ dàng, thoải mái.Đế bằng chất liệu cao su .Êm ái, độ bám tốt, chống trơn trượt."
+    },
+    {
+      "id": "2",
+      "name": "Nike Air Max 1 Se \"Just Do It\"",
+      "image": "https://product.hstatic.net/1000375638/product/804379_02_6229ef78879045719f53ea5d995e9baa_grande.jpg",
+      "price": "4900000",
+      "des": "kádkas"
+    },
+    {
+      "id": "3",
+      "name": "The 10: Nike Air Presto \"Off White\"",
+      "image": "https://product.hstatic.net/1000375638/product/804113_02_18fd176e1b014f4b91167909d84cfb5b_grande.jpg",
+      "price": "8000000",
+      "des": "kádkas"
+    },
+    {
+      "id": "4",
+      "name": "Nike Wmns Air Huarache City Move",
+      "image": "https://product.hstatic.net/1000375638/product/141873_02_1aac934c7b5945a2a48ea2fc7e2323c4_grande.jpg",
+      "price": "5200000",
+      "des": "kádkas"
+    },
+    {
+      "id": "5",
+      "name": "Nike Air Max 90 Essential \"Grape\"",
+      "image": "https://product.hstatic.net/1000375638/product/139922_02_66b331600fc24d72a42ed88d5708ff72_grande.jpg",
+      "price": "4800000",
+      "des": "kádkas"
+    },
+    {
+      "id": "6",
+      "name": "Nike Air Max 97 Premium",
+      "image": "https://product.hstatic.net/1000375638/product/806032_02_93f10da814884f8e85dbff9d9e4ac81f_grande.jpg",
+      "price": "8000000",
+      "des": "kádkas"
+    },
+    {
+      "id": "7",
+      "name": "Adidas Nmd Xr1 W \"Pearl Grey\"",
+      "image": "https://product.hstatic.net/1000375638/product/801270_2_2e0d42c7143f4ffb92043bb6547eaae7_grande.jpg",
+      "price": "5750000",
+      "des": "kádkas"
+    },
+    {
+      "id": "8",
+      "name": "Nike W's Air Huarache Run",
+      "image": "https://product.hstatic.net/1000375638/product/nike-ws-air-huarache-run-white-white-052856_2_f6578c9cd73a4d4384a409b0f3649efd_grande.jpg",
+      "price": "7300000",
+      "des": "kádkas"
+    }
+  ],
+  "account": [
+    {
+      "id": "1",
+      "userName": "ngothong",
+      "pass": "123456"
+    }
+  ]
+}

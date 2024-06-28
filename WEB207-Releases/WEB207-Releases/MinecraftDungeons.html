@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Minecraft Dungeons</title>
+</head>
+
+<body>
+	<!-- Slide -->
+	<div id="SlideMC1" class="carousel slide carousel-fade" data-bs-ride="carousel" ng-include="'Module/Slide.html'"></div>
+
+	<!-- Purple image -->
+	<div class="row justify-content-center m-0" style="background-color: #32122A;" ng-include="'Module/Purple.html'"></div>
+
+	<!-- White image -->
+	<div class="bg-white" ng-include="'Module/World1.html'"></div>
+
+	<!-- Minecraft DLC -->
+	<div style="background-color: #FFB649;" class="pb-5" ng-controller="DLCCtrl" ng-include="'Module/DLC.html'"></div>
+
+	<!-- Small white image -->
+	<div style="background-color: #F8F5F4;" class="pb-5" ng-include="'Module/World2.html'"></div>
+
+	<!-- Minecraft new -->
+	<div style="background-color: #541528;" class="pb-5" ng-controller="NewDungeonsCtrl" ng-include="'Module/NewDungeons.html'"></div>
+
+	<!-- Minecraft marketplace -->
+	<div style="background-image: url('https://www.minecraft.net/content/dam/games/minecraft/marketplace/bg-wool-dark.png');" ng-include="'Module/Market.html'"></div>
+
+	<!-- Arrow icon -->
+	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+		<symbol viewBox="0 0 512 512" id="pixel-arrow-right">
+			<path d="M416 224v-64h-64V96h-64V32h-64v192H32v64h192v192h64v-64h64v-64h64v-64h64v-64h-64z"></path>
+		</symbol>
+	</svg>
+</body>
+
+</html>

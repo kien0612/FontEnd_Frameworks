@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Vũ Trung Kiên",
+      "email": "vutrungkien612203@gmail.com",
+      "class": "wd18303",
+      "stady": "tkw"
+    },
+    {
+      "id": "2",
+      "name": "Vũ Trung B",
+      "email": "kien0612@gmail.com",
+      "class": "wd18302",
+      "stady": "tkw"
+    },
+    {
+      "id": "1",
+      "name": "Vũ Trung C",
+      "email": "kien061203@gmail.com",
+      "class": "wd18303",
+      "stady": "tkđh"
+    },
+    {
+      "id": "fc52",
+      "name": "Nguyễn Ngọc Hiếu",
+      "email": "hieu123@gmail.com",
+      "class": "wd18302",
+      "stady": "cntt"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+<h1>Danh sách giảng viên</h1>
+<button class="btn btn-success" ng-click="onAdd()">Thêm</button>
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Tên</th>
+        <th>Giới tính</th>
+        <th>Email</th>
+        <th>Thao tác</th>
+    </tr>
+    <tr ng-repeat="t in teachers">
+        <td>{{t.id}}</td>
+        <td>{{t.ten}}</td>
+        <td>{{t.gioitinh}}</td>
+        <td>{{t.email}}</td>
+        <td>
+            <button class="btn btn-primary" ng-click="onDetail(t.id)">Chi tiết</button>
+            <button class="btn btn-warning" ng-click="onEdit(t.id)">Sửa</button>
+        </td>
+    </tr>
+</table>

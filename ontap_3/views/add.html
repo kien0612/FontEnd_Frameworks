@@ -1,0 +1,37 @@
+<h1>Thêm sản phẩm</h1>
+<form name="form">
+    <div>
+        <label class="form-label ">Id</label>
+        <input type="text" name="id" class="form-control" ng-model="inputValue.id" required>
+        <p class="text-danger" ng-if="form.id.$dirty && form.id.$error.required">ID không được để trống</p>
+    </div>
+    <div>
+        <label class="form-label ">Name</label>
+        <input type="text" name="name" class="form-control" ng-model="inputValue.name" required>
+        <p class="text-danger" ng-if="form.name.$dirty && form.name.$error.required">Name không được để trống</p>
+    </div>
+    <div>
+        <label class="form-label ">Price</label>
+        <input type="text" name="price" class="form-control" ng-model="inputValue.price" required>
+        <p class="text-danger" ng-if="form.price.$dirty && form.price.$error.required">Price không được để trống</p>
+    </div>
+    <div>
+        <label class="form-label ">des</label>
+        <input type="text" name="des" class="form-control" ng-model="inputValue.des" required>
+        <p class="text-danger" ng-if="form.des.$dirty && form.des.$error.required">des không được để trống</p>
+    </div>
+    <div>
+        <label class="form-label ">category</label>
+        <select name="category" id="" class="form-control" ng-model="inputValue.category" required>
+            <option value="Hãng A">Hãng A</option>
+            <option value="Hãng B">Hãng B</option>
+            <option value="Hãng C">Hãng C</option>
+            <option value="Hãng D">Hãng D</option>
+        </select>
+        <p class="text-danger" ng-if="form.category.$dirty && form.category.$error.required">category không được để trống</p>
+    </div>
+    <center>
+        <button type="button" class="btn btn-success mt-2" ng-click="onAdd()">Thêm mới</button>
+    </center>
+    
+</form>

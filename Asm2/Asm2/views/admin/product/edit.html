@@ -1,0 +1,32 @@
+<h1>Cập nhật sản phẩm</h1>
+
+<form >
+    <div class="row">
+        <div class="col-12">
+            <div class="mb-3">
+                <label class="form-label" for="">Name:</label>
+                <input type="text" name="" ng-model="ObjPro.name" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Image:</label>
+                <input type="text" name="image" ng-model="ObjPro.img" id="imageInput" class="form-control">
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label" for="">Price:</label>
+                <input type="text" name="" ng-model="ObjPro.price" class="form-control">
+            </div>
+            <div class = "mb-3">
+                <label class = "form-label for=">Category:</label>
+                <select ng-model="ObjPro.category" class="form-control">
+                    <option value="">Chọn danh mục</option>
+                    <option ng-repeat="category in list_category" value="{{category.name}}">{{category.name}}</option>
+                </select>                
+            </div>
+            
+            
+            <button type="submit" class="btn btn-primary" ng-click="edit_product()">Cập nhật</button>
+            <a class="btn btn-outline-success" href="#!list_product">Quay lại</a>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,23 @@
+<h1>Danh Sách Danh Mục</h1>
+<table class="table mb-5">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">
+                <a href="#!/addCategory"><button type="button" class="btn btn-success">Thêm</button></a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="category in categorys">
+            <th scope="row">{{category.id}}</th>
+            <td>{{category.name}}</td>
+            
+            <td > <button type="button" class="btn btn-warning" ng-click="onDetail(category.id)">Chi tiết</button>
+                <button type="button" class="btn btn-danger" ng-click="onDelete(category.id)">Xóa</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+

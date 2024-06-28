@@ -1,0 +1,37 @@
+<div class="row gx-0">
+<aside class=" col-2 bg-dark-subtle " ng-include="'./view/aside.html'"></aside>
+      <article class="col-10 bg-body-tertiary p-5 "  ng-controller="ListController" >
+        <div class="center bg-white rounded-5 p-3">
+            <h1 style="text-align: center;">List Products</h1>
+            <table class="table mb-5">
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Image</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">
+                    <a href="#!/add"><button type="button" class="btn btn-success">Thêm</button></a>
+                </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="pr in listPro">
+                  <th scope="row">{{pr.id}}</th>
+                  <td>{{pr.name}}</td>
+                  <td>{{pr.price}}</td>
+                  <td><img ng-src="{{pr.image}}" alt="" class="w-100"></td>
+                  <td>{{pr.des}}</td>
+                  <td><a ng-href="#!/detail/{{ pr.id }}"><button class="btn btn-primary" >Xem</button></a></td>
+                  <!-- <td><button class="btn btn-primary" ng-click="onDetail(pr.id)">Xem</button></td> -->
+                  <td><a ng-href="#!/update/{{ pr.id }}"><button class="btn btn-warning">Sửa</button></a></td>
+                  <td><button class="btn btn-danger" ng-click="deleteSp(pr.id)">Xoá</button></td>
+                
+                </tr>
+              </tbody>
+            </table>
+            
+          </div>
+        </article>
+    </div>

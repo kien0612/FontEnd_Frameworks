@@ -1,0 +1,35 @@
+<h1>Thêm mới User</h1>
+<form name="form">
+    <div>
+        <label class="form-label ">Name</label>
+        <input type="text" name="name" class="form-control" ng-model="user.name" disabled>
+        <p class="text-danger " ng-if="form.name.$dirty && form.name.$error.required ">Name không được để trống </p>
+    </div>
+    <div>
+        <label class="form-label ">Email</label>
+        <input type="text" name="email" class="form-control" ng-model="user.email" disabled>
+        <p class="text-danger " ng-if="form.email.$dirty && form.email.$error.required ">Email không được để trống </p>
+    </div>
+    <div>
+        <label class="form-label ">Class</label>
+        <select name="class" id="" class="form-control" ng-model="user.class" disabled>
+            <option value="wd18301">wd18301</option>
+            <option value="wd18302">wd18302</option>
+            <option value="wd18303">wd18303</option>
+        </select>
+        <p class="text-danger " ng-if="form.class.$dirty && form.class.$errors.required ">Class không được để trống </p>
+    </div>
+    <div>
+        <label class="form-label ">Stady</label>
+        <select name="stady" id="" class="form-control" ng-model="user.stady" disabled>
+            <option value="cntt">cntt</option>
+            <option value="tkw">tkw</option>
+            <option value="tkđh">tkđh</option>
+        </select>
+        <p class="text-danger " ng-if="form.stady.$dirty && form.stady.$errors.required ">stady không được để trống </p>
+    </div>
+    <center>
+        <button type="button" class="btn btn-success mt-5" ng-click="onEdit()">Sửa</button>
+        <button type="button" class="btn btn-warning mt-5" ng-click="onBack()">Quay lại</button>
+    </center>
+</form>
